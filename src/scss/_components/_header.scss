@@ -1,0 +1,181 @@
+.header-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  @include transition;
+  background-color: #fff;
+  padding: 5rem 0;
+  border-bottom: 0.1rem solid transparent;
+  &.is-fixed {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-color: $color-pri;
+  }
+  @include max(1440px) {
+    padding: 2rem 0;
+  }
+  @include max(991.98px) {
+    padding: 2rem 0;
+    height: 9rem;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  @include max(991.98px) {
+    height: 5rem;
+    img {
+      height: 5rem;
+      width: auto;
+    }
+  }
+}
+.menu {
+  display: flex;
+  gap: 0 10rem;
+  li {
+    position: relative;
+  }
+
+  @include max(1600.98px) {
+    gap: 0 8rem;
+  }
+  @include max(1440px) {
+    gap: 0 5rem;
+  }
+  @include max(1199.98px) {
+    gap: 0 2rem;
+  }
+
+  @include max(991.98px) {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+.menu-item {
+  padding: 1.6rem;
+  display: block;
+  cursor: pointer;
+  font-weight: 400;
+  @include fz-24;
+  background: transparent;
+  @include transition;
+  color: $color-pri;
+  position: relative;
+  @media screen and (min-width: 992px) {
+    &:hover {
+      color: $color-second;
+    }
+  }
+
+  @include max(991.98px) {
+    padding: 1.2rem 1.6rem;
+  }
+}
+.header-bar {
+  display: none;
+  background: #fff;
+  cursor: pointer;
+  padding: 1.6rem;
+  position: relative;
+  @include box(2.4rem);
+  &.is-active {
+    .menu-icon {
+      background: transparent;
+      &::before {
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+      &::before,
+      &::after {
+        top: 0;
+        transition: top ease 0.3s, transform ease 0.3s 0.3s;
+      }
+    }
+  }
+  @include max(991.98px) {
+    display: block;
+  }
+}
+
+.menu-icon {
+  @include absoluteCenter(both);
+  background: #242424;
+  display: block;
+  height: 0.2rem;
+  transition: background ease 0.3s, top ease 0.3s 0.3s, transform ease 0.3s;
+  width: 2rem;
+  &::after,
+  &::before {
+    background: #242424;
+    content: "";
+    display: block;
+    height: 0.2rem;
+    position: absolute;
+    transition: background ease 0.3s, top ease 0.3s 0.3s, transform ease 0.3s;
+    width: 2rem;
+  }
+  &::before {
+    top: -0.6rem;
+  }
+  &::after {
+    top: 0.6rem;
+  }
+}
+.header-main {
+  @include flex-icenter;
+  justify-content: space-between;
+  gap: 3rem;
+  @media screen and (min-width: 1200px) {
+    gap: 9.7rem;
+  }
+  @include max(991.98px) {
+    position: fixed;
+    top: 9rem;
+    width: 100%;
+    right: (-100%);
+    height: calc(100% - 9rem);
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #fff;
+    z-index: 100;
+    @include transition;
+    &.is-active {
+      right: 0;
+    }
+  }
+}
+
+// contact menu
+.contact-menu {
+  position: fixed;
+  right: 7rem;
+  bottom: 5rem;
+  z-index: 10;
+  .share {
+    flex-direction: column;
+  }
+  @include min(1800px) {
+    bottom: 10rem;
+  }
+  @include max(767.98px) {
+    right: 2rem;
+  }
+  @include max(575.98px) {
+    .share-item {
+      img {
+        @include box(5rem);
+      }
+    }
+  }
+}

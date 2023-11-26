@@ -1,0 +1,72 @@
+/*------------------------------------------------------------
+	Media
+------------------------------------------------------------*/
+@mixin max($point) {
+  @media screen and (max-width: $point) {
+    @content;
+  }
+}
+@mixin min($point) {
+  @media screen and (min-width: $point) {
+    @content;
+  }
+}
+/*------------------------------------------------------------
+	Flex Box
+------------------------------------------------------------*/
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@mixin flex-icenter {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-jcenter {
+  display: flex;
+  justify-content: center;
+}
+@mixin flex-jbetween {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin pseudo($z: -1) {
+  position: absolute;
+  z-index: $z;
+  content: "";
+}
+@mixin bgImage($position: center, $size: cover, $repeat: no-repeat) {
+  background-repeat: $repeat;
+  background-size: $size;
+  background-position: $position;
+}
+@mixin absoluteCenter($dir: "both") {
+  position: absolute;
+  @if $dir == "top" {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @if $dir == "left" {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @if $dir == "both" {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin transition {
+  transition: 0.3s ease-in-out;
+}

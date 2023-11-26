@@ -1,0 +1,19 @@
+// swiper pagination
+.swiper-pagination-bullet {
+  background: #d9d9d9;
+  @include box(2rem);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: $color-pri;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 1.4rem;
+}
+.trust {
+  .swiper-pagination-bullet-active {
+    background: $color-text;
+  }
+}

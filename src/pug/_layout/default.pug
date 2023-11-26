@@ -1,0 +1,38 @@
+include ../_mixins/_all
+
+block vars
+  -title        = ''
+  -description  = ''
+  -keywords     = ''
+  -og_title     = ''
+  -url          = ''
+  -pageID       = ''
+  -path         = '.'
+
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='./assets/js/library/aos/aos.css')
+    link(rel='stylesheet' href='./assets/js/library/swiper/swiper-bundle.min.css')
+    link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css")
+    link(rel='stylesheet' href='./assets/css/style.css')
+    link(rel='icon' type='image/png' href='./assets/images/icon.png')
+    link(href='https://db.onlinewebfonts.com/c/1888fd4dd9e4a641e315fa9c59e0bbd1?family=SFU+Fenice' rel='stylesheet')
+    title Template
+
+  body(class=pageID)
+    include ../_modules/header
+    main.main
+      block container
+    include ../_modules/footer
+    script(src='./assets/js/library/jquery/jquery.js')
+    script(src='./assets/js/library/swiper/swiper-bundle.min.js')
+    script(src='./assets/js/library/aos/aos.js')
+    script(src='./assets/js/library/jquery/jquery-migrate.js')
+    script(src='./assets/js/library/match-height/jquery.matchHeight.js')
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js")
+    script(src='./assets/js/main.js' type='module')
+    block scripts

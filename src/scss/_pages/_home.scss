@@ -1,0 +1,422 @@
+.h-intro-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8.4rem;
+  @include max(575.98px) {
+    padding-top: 5rem;
+  }
+}
+.h-intro-content,
+.h-intro-img {
+  width: 50%;
+  @include max(767.98px) {
+    width: 100%;
+  }
+}
+.h-intro-content {
+  padding: 3rem 4.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  .title {
+    max-width: 70rem;
+  }
+  .btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+  @include max(1199.98px) {
+    .title {
+      max-width: 40rem;
+    }
+    padding: 3rem 2rem;
+  }
+  @include max(575.98px) {
+    padding: 3rem 1.5rem;
+  }
+}
+.h-intro-img {
+  position: relative;
+  min-height: 30rem;
+  img {
+    @include box(100%);
+    position: absolute;
+    object-fit: cover;
+  }
+}
+
+.h-ser {
+  padding-top: 7.6rem;
+  @include max(575.98px) {
+    padding-top: 5rem;
+  }
+}
+.wrap {
+  width: calc(19 / 20 * 100%);
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  @include max(1440px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+  @include max(991.98px) {
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+  }
+}
+.heading {
+  width: calc(4 / 19 * 100%);
+  .title {
+    display: flex;
+    flex-direction: column;
+    max-width: 29.5rem;
+  }
+  @include max(991.98px) {
+    width: 100%;
+    .title {
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: unset;
+    }
+  }
+}
+.card-list {
+  width: calc(15 / 19 * 100%);
+  margin: 0 -0.75rem;
+  display: flex;
+  row-gap: 1.5rem;
+  flex-wrap: wrap;
+  .card {
+    padding: 0 0.75rem;
+    width: calc(100% / 3);
+  }
+  @include max(1199.98px) {
+    .card {
+      width: 50%;
+    }
+  }
+  @include max(991.98px) {
+    width: 100%;
+  }
+  @include max(767.98px) {
+    margin: 0;
+    .card {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+.h-member {
+  padding-top: 6.3rem;
+  .card-member {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .card-content {
+      flex: 1;
+    }
+  }
+  .card-info {
+    margin-top: 0.8rem;
+  }
+  .swiper {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+  @include max(991.98px) {
+    .card-info {
+      li {
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+  @include max(575.98px) {
+    padding-top: 5rem;
+    .swiper {
+      padding-top: 5rem;
+      padding-bottom: 6rem;
+    }
+    .card-info {
+      li {
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.h-customer {
+  padding-top: 4.4rem;
+}
+.cusomter {
+  .swiper {
+    padding-bottom: 3rem;
+  }
+  .swiper-slide {
+    @include flex-icenter;
+  }
+}
+.feedback {
+  padding-top: 4.4rem;
+  padding-bottom: 9.6rem;
+  .swiper {
+    padding-bottom: 6rem;
+  }
+  @include max(575.98px) {
+    .card-img {
+      min-height: 45rem;
+    }
+  }
+}
+.h-feedback {
+  padding-top: 4.4rem;
+}
+.h-trust {
+  padding: 5.5rem 0;
+  .title {
+    @include fz-48;
+  }
+}
+.trust {
+  width: calc(17 / 20 * 100%);
+  margin-left: auto;
+  margin-right: auto;
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+  .swiper {
+    padding-bottom: 10rem;
+    padding-top: 8.5rem;
+  }
+  .desc {
+    flex: 1;
+  }
+  @include max(1199.98px) {
+    width: 100%;
+  }
+  @include max(575.98px) {
+    .swiper {
+      padding-bottom: 7rem;
+      padding-top: 5rem;
+    }
+  }
+}
+.trust-img {
+  min-height: 13.8rem;
+}
+.news {
+  .title {
+    display: block;
+  }
+  .card-list {
+    margin: 0 -4.5rem;
+    row-gap: 4.6rem;
+  }
+  .card {
+    padding: 0 4.5rem;
+    width: 50%;
+    @include min(992px) {
+      &:hover {
+        .card-content {
+          box-shadow: none;
+        }
+        .card-title {
+          color: $color-pri;
+        }
+      }
+    }
+  }
+  .card-title {
+    @include fz-34;
+    color: $color-second;
+  }
+  .card-content {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .card-desc {
+    color: $color-pri;
+  }
+  .card-img {
+    height: calc(100vw * (283 / 1920));
+  }
+  @include max(1700px) {
+    .card-list {
+      margin: 0 -2.5rem;
+      row-gap: 4rem;
+    }
+    .card {
+      padding: 0 2.5rem;
+    }
+  }
+  @include max(1400px) {
+    .card-list {
+      margin: 0 -1.5rem;
+      row-gap: 3rem;
+    }
+    .card {
+      padding: 0 1.5rem;
+    }
+  }
+  @include max(1199.98px) {
+    .card-list {
+      margin: 0 -1rem;
+      row-gap: 3rem;
+    }
+    .card {
+      padding: 0 1rem;
+    }
+  }
+  @include max(767.98px) {
+    .card-list {
+      margin: 0 -0.75rem;
+      row-gap: 2rem;
+    }
+    .card {
+      padding: 0 0.75rem;
+    }
+  }
+  @include max(575.98px) {
+    .card {
+      width: 100%;
+    }
+  }
+}
+.h-news {
+  padding-top: 7.8rem;
+  padding-bottom: 8.7rem;
+  @include max(575.98px) {
+    padding: 5rem 0;
+  }
+}
+.h-form {
+  margin-top: 7.8rem;
+}
+.faq-box {
+  padding-top: 8.3rem;
+  padding-bottom: 2.6rem;
+  border-top: 0.2rem solid $color-pri;
+  @include max(575.98px) {
+    padding-top: 5rem;
+  }
+}
+.faq-wrap {
+  @include flex;
+  .heading {
+    width: calc(5 / 20 * 100%);
+    .desc {
+      max-width: 26.1rem;
+      margin-top: 5.3rem;
+    }
+  }
+  @include max(1199.98px) {
+    gap: 2rem;
+  }
+  @include max(991.98px) {
+    gap: 3rem 0;
+    .heading {
+      width: 100%;
+      .desc {
+        max-width: unset;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+.faq {
+  flex: 1;
+}
+.faq-item {
+  cursor: pointer;
+  details {
+    background: $color-pri;
+    padding: 2rem 2.5rem;
+    @include transition;
+    &[open] {
+      summary {
+        margin-bottom: 1rem;
+      }
+      .faq-icon {
+        img {
+          &:first-child {
+            display: none;
+          }
+          &:last-child {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  summary {
+    cursor: pointer;
+    transition: margin 150ms ease-out;
+    list-style: none;
+    font-family: var(--font-pri);
+    @include flex-icenter;
+    gap: 2rem 8rem;
+  }
+  &:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+  @include max(1400px) {
+    summary {
+      gap: 5rem;
+    }
+  }
+  @include max(1199.98px) {
+    summary {
+      gap: 3rem;
+    }
+  }
+  @include max(767.98px) {
+    summary {
+      gap: 2rem;
+    }
+  }
+  @include max(575.98px) {
+    details {
+      padding: 2rem 1.5rem;
+    }
+    summary {
+      gap: 1rem;
+    }
+  }
+}
+.faq-num {
+  @include fz-60;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.faq-title {
+  @include fz-34;
+  color: $color-text;
+  flex: 1;
+  @include max(767.98px) {
+    font-size: 2rem;
+  }
+}
+.faq-icon {
+  img {
+    @include transition;
+    &:last-child {
+      display: none;
+    }
+  }
+  @include max(767.98px) {
+    img {
+      width: 2rem;
+    }
+  }
+}

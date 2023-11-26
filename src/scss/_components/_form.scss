@@ -1,0 +1,120 @@
+.form-wrap {
+  padding-top: 4.3rem;
+  padding-bottom: 9.2rem;
+  position: relative;
+  overflow: hidden;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  &::before {
+    @include pseudo(0);
+    @include box(39.6rem);
+    background: $color-pri;
+    top: 0;
+    right: 0;
+  }
+  .title {
+    max-width: 125.9rem;
+    @include fz-48;
+    text-transform: capitalize;
+  }
+
+  @include max(991.98px) {
+    padding-bottom: 0;
+  }
+  @include max(767.98px) {
+    &::before {
+      width: 50%;
+    }
+  }
+}
+.form-inner {
+  width: calc(100vw - (100vw - 175rem) / 2);
+  margin-top: 4.5rem;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  @include max(1750px) {
+    width: 100%;
+  }
+}
+.form-box {
+  @include flex;
+  max-width: 175rem;
+  padding-left: 1.5rem;
+  margin-left: auto;
+  @include max(1750px) {
+    width: 100%;
+  }
+  @include max(991.98px) {
+    padding-right: 1.5rem;
+  }
+}
+.form-media,
+.form {
+  width: 50%;
+  @include max(991.98px) {
+    width: 100%;
+  }
+}
+.form-media {
+  position: relative;
+  .card-media {
+    @include absoluteCenter(both);
+  }
+  &:hover {
+    transform: translateY(0);
+  }
+  .card-img {
+    height: 100%;
+    min-height: 35rem;
+  }
+}
+.form {
+  padding: 3rem 6.6rem 3rem 0;
+  @include max(1199.98px) {
+    padding: 3rem 3rem 3rem 0;
+  }
+  @include max(991.98px) {
+    padding: 2rem 0;
+  }
+}
+.form-group {
+  margin-bottom: 1.8rem;
+  @include flex;
+  flex-direction: column;
+  font-family: var(--font-pri);
+  color: $color-pri;
+  label {
+    @include fz-34;
+    color: inherit;
+    font-family: inherit;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+  }
+  input,
+  textarea {
+    @include fz-20;
+    font-family: inherit;
+    color: inherit;
+    border: 0.1rem solid $color-pri;
+    background: rgba(217, 217, 217, 0);
+    @include transition;
+    padding: 1rem 1.5rem;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+    &:focus {
+      border-color: $color-text;
+    }
+  }
+  input {
+    height: 5rem;
+  }
+  textarea {
+    height: 17.8rem;
+  }
+}

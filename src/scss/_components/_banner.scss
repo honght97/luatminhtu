@@ -1,0 +1,10 @@
+.banner-img {
+  height: calc(100vw * (751 / 1920));
+  min-height: 30rem;
+  position: relative;
+  img {
+    @include box(100%);
+    position: absolute;
+    object-fit: cover;
+  }
+}

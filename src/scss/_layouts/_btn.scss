@@ -1,0 +1,43 @@
+.btn {
+  height: 4.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  @include fz-24;
+  font-family: var(--font-pri);
+  background-color: transparent;
+  border: 0.1rem solid transparent;
+  @include transition;
+  padding: 1rem 1.6rem;
+  border-radius: 10rem;
+  line-height: 100%;
+  padding-bottom: 1.6rem;
+}
+.btn-white {
+  background-color: #fff;
+  border-color: #fff;
+  color: $color-text;
+  &:hover {
+    background-color: $color-pri;
+    border-color: $color-pri;
+  }
+}
+.btn-trans {
+  border-color: #fff;
+  color: #fff;
+  &:hover {
+    background-color: $color-pri;
+    border-color: $color-pri;
+    color: $color-text;
+  }
+}
+.btn-pri {
+  background-color: $color-pri;
+  border-color: $color-pri;
+  color: #fff;
+  &:hover {
+    background-color: $color-text;
+    color: $color-pri;
+    border-color: $color-text;
+  }
+}
