@@ -118,3 +118,12 @@
     height: 17.8rem;
   }
 }
+.form {
+  .btn {
+    width: 19.2rem;
+  }
+  .btn-wrap {
+    @include flex-center;
+    justify-content: flex-end;
+  }
+}

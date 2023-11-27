@@ -41,3 +41,11 @@
     border-color: $color-text;
   }
 }
+.btn-border {
+  color: $color-pri;
+  border-color: $color-pri;
+  &:hover {
+    color: $color-text;
+    border-color: $color-text;
+  }
+}

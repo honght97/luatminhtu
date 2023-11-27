@@ -1,0 +1,289 @@
+extends _layout/default
+
+block vars
+  -title        = 'About'
+  -description  = ''
+  -keywords     = ''
+  -og_title     = ''
+  -url          = ''
+  -pageID       = 'about'
+  -path         = '.'
+
+block scripts
+
+block container
+  section.profile(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .container
+      .profile-wrap
+        .profile-img
+          img(src=path+"/assets/images/about/profile.jpg", alt="" title="")
+        .profile-content
+          h2.title.cl-pri Luật sư: Võ Hồng Tú
+          p.subtitle.cl-sec CEO Minh Tu Law
+          p.desc.cl-pri Luật sư Tú luôn tích lũy kinh nghiệm và nâng cao chuyên môn đối với các vấn đề về: tư vấn và hỗ trợ pháp lý trong việc vận hành doanh nghiệp tại Việt Nam để đảm bảo mọi hoạt động đều tuân thủ pháp luật; tư vấn và hỗ trợ các nhà đầu tư nước ngoài trong việc đầu tư và kinh doanh tại Việt Nam; tư vấn và hỗ trợ các bên trong việc thực hiện giao dịch mua bán và sáp nhập; tư vấn và hỗ trợ giải quyết các tranh chấp thương mại,v.v… Luật sư Tú thường xuyên tư vấn cho các Khách Hàng là các doanh nghiệp hoạt động trong các lĩnh vực về: Xuất nhập khẩu và Phân phối, Sản xuất, Công nghệ thông tin, Y tế, Bất động sản và Xây dựng, Năng lượng.
+          .profile-share
+            button.btn.btn-border Tải Profile
+            ul.share
+              li.share-item
+                a(href="#" title='' target="_blank")
+                  img(src=path+"/assets/images/common/ico_facebook_1.svg", alt="" title="")
+              li.share-item
+                a(href="#" title='' target="_blank")
+                  img(src=path+"/assets/images/common/ico_tiktok.svg", alt="" title="")
+              li.share-item
+                a(href="#" title='' target="_blank")
+                  img(src=path+"/assets/images/common/ico_youtube.svg", alt="" title="")
+  section.ab-info.bg-sec(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .ab-info-wrap
+      .ab-heading
+        h2.title.cl-white Quá trình học tập
+      .ab-content.bg-pri
+        ul.tl
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year 2007 - 2011
+              span.tl-desc Học tại trường Đại học Luật thành phố Hồ Chí Minh - Bằng cử nhân Luật
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year 2011 - 2012
+              span.tl-desc Chứng chỉ nghiệp vụ sư phạm (loại giỏi)
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year 2013 - 2017
+              span.tl-desc Bằng Thạc sĩ Luật
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year 2021 - 2022
+              span.tl-desc Chứng chỉ Luật sư tại Học viện Tư pháp
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year Năm 2021
+              span.tl-desc Chứng chỉ mô hình nhượng quyền
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year Năm 2022
+              span.tl-desc Chứng chỉ mô hình nhượng quyền
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year Năm 2023
+              span.tl-desc Chứng chỉ tài chính chuyên sâu dành cho CEO
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year Năm 2023
+              span.tl-desc Chứng chỉ hoàn thành cơ chế vốn VOC
+  section.ab-info.bg-pri.ab-info2(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .ab-info-wrap
+      .ab-heading
+        h2.title.cl-white Quá trình CÔNG TÁC
+      .ab-content.bg-sec
+        ul.tl
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year 2011 - 2018
+              span.tl-desc Công tác tại trường Đại học Luật thành phố Hồ Chí Minh với vai trò là giảng viên cơ hữu.
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year 2013 - 2018
+              span.tl-desc Cộng tác với Công ty Luật Tín & Tâm
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year 2018 - 2020
+              span.tl-desc Cố vấn cấp cao Công ty Luật Fullaw
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year 2021 - 2022
+              span.tl-desc Chứng chỉ Luật sư tại Học viện Tư pháp
+          li.tl-item
+            .tl-dot
+            .tl-content
+              span.tl-year 2020 - nay
+              span.tl-desc Founder & CEO Công ty Luật Minh Tú
+  section.ab-sup(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .container
+      .ab-sup-wrap
+        h2.title.t-center.cl-pri Các thương vụ cụ thể anh đã hỗ trợ cho khách hàng&#160;
+          span.cl-txt thành công
+        ul.ab-sup-list
+          li.ab-sup-item
+            .ab-sup-img
+              img(src=path+"/assets/images/about/customer_1.png", alt="" title="")
+            .ab-sup-content
+              h3.ab-sup-title.cl-txt Thương hiệu Viva Star Coffee
+              p.desc.cl-white
+                span.cl-txt Trước khi tư vấn:&#160;
+                | có 330 quán cà phê, 7000 điểm bán sỉ cà phê trên toàn quốc. Hệ thống pháp lý ổn định, nhưng phòng pháp chế ít người, khó xử lý được khối lượng công việc lớn trong trường hợp có tranh chấp xảy ra.
+              p.desc.cl-white
+                span.cl-txt Sau khi tư vấn (kí ghi nhớ đồng hành 3 năm đến khi IPO):&#160;
+                | có đội ngũ pháp lý hùng hậu giải quyết các vấn đề khi xảy ra tranh chấp với các bên nhận quyền kinh doanh; có đội ngũ rà soát pháp lý đối với bất kì công văn nào trước khi phát hành. Đặt mục tiêu phát triển: 868 quán cà phê và 10000 điểm bán sỉ cho đến năm 2025.
+          li.ab-sup-item
+            .ab-sup-img
+              img(src=path+"/assets/images/about/customer_2.png", alt="" title="")
+            .ab-sup-content
+              h3.ab-sup-title.cl-txt Tư vấn nhượng quyền thương hiệu Care With Love
+              p.desc.cl-white
+                span.cl-txt Trước khi tư vấn:&#160;
+                | hệ thống pháp lý có nhưng chưa ổn định và chặt chẽ, mới nhượng quyền được 2 chi nhánh. Chưa biết cách giải quyết các vấn đề pháp lý giữa các chi nhánh.
+              p.desc.cl-white
+                span.cl-txt Sau khi tư vấn:&#160;
+                |  có hệ thống pháp lý ổn định, chặt chẽ, đã nhượng quyền được 13 chi nhánh tính đến tháng 11/2023.
+        li.ab-sup-item
+            .ab-sup-img
+              img(src=path+"/assets/images/about/customer_3.png", alt="" title="")
+            .ab-sup-content
+              h3.ab-sup-title.cl-txt Thương hiệu Cybercore Gamming
+              p.desc.cl-white
+                span.cl-txt Trước khi tư vấn:&#160;
+                | gặp trở ngại pháp lý trong quá trình nhượng quyền mô hình premium; gặp trở ngại pháp lý khi deal với chủ nhà, trở ngại trong việc xin giấy phép kinh doanh phòng game tại địa phương, trở ngại trong phân định nhiệm vụ quyền hạn giữa các cổ đông.
+              p.desc.cl-white
+                span.cl-txt Sau khi tư vấn:&#160;
+                | chuẩn chỉ hệ thống pháp lý nhượng quyền; có đội ngũ pháp lý hùng hậu hỗ trợ trong việc mở cửa hàng mới, đặt mục tiêu mở 1000 cửa hàng tại khu vực miền bắc từ năm 2023 trở đi.
+        li.ab-sup-item
+            .ab-sup-img
+              img(src=path+"/assets/images/about/customer_4.png", alt="" title="")
+            .ab-sup-content
+              h3.ab-sup-title.cl-txt Thương hiệu Menfit
+              p.desc.cl-white
+                span.cl-txt Trước khi tư vấn:&#160;
+                | đã có hệ thống pháp lý tương đối ổn định, có nhu cầu tái cấu trúc các chi nhánh đã thành lập để tối ưu về chi phí, tăng doanh thu. Gặp trở ngại trong khi làm việc với các chủ nhà mùa covid.
+              p.desc.cl-white
+                span.cl-txt Sau khi tư vấn:&#160;
+                | hoàn thiện hơn hệ thống pháp lý bao gồm hợp đồng, quy trình, giải quyết bài toán về tuyển dụng và sa thải lao động, hiện tại đang định hướng phát triển 100 cửa hàng trên toàn quốc. Có bộ phận pháp chế thuê ngoài hoàn chỉnh, phù hợp ngân sách, sử dụng hiệu quả.
+  section.ab-cer(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .container
+      .ab-cer-wrap
+        h2.title.cl-pri.t-center BẮNG CẤP, CHỨNG CHỈ CỦA LUẬT SƯ VÕ HỒNG TÚ
+        ul.ab-cer-list
+          li.ab-cer-item
+            img(src=path+"/assets/images/about/cer_1.jpg", alt="" title="")
+            h3.ab-cer-title Bằng cử nhân ngành Luật
+          li.ab-cer-item
+            img(src=path+"/assets/images/about/cer_2.jpg", alt="" title="")
+            h3.ab-cer-title Bằng Thạc sĩ Luật
+          li.ab-cer-item
+            img(src=path+"/assets/images/about/cer_3.jpg", alt="" title="")
+            h3.ab-cer-title Chứng chỉ đào tạo nghề Luật sư
+          li.ab-cer-item
+            img(src=path+"/assets/images/about/cer_4.jpg", alt="" title="")
+            h3.ab-cer-title Cơ chế vốn
+          li.ab-cer-item
+            img(src=path+"/assets/images/about/cer_5.png", alt="" title="")
+            h3.ab-cer-title Cấu trúc pháp lý M&A
+          li.ab-cer-item
+            img(src=path+"/assets/images/about/cer_6.png", alt="" title="")
+            h3.ab-cer-title Tài chính chuyên sâu
+          li.ab-cer-item
+            img(src=path+"/assets/images/about/cer_7.png", alt="" title="")
+            h3.ab-cer-title Mô hình nhượng quyền
+  section.h-news.ab-news(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .container
+      .wrap.news
+        .heading
+          h2.title.cl-pri
+            span Tin tức mới nhất từ&#160;
+            span.cl-sec LUẬT MINH TÚ
+        .card-list
+          -var n=0;
+          while n < 4
+            a.card(href="#" title='' target="_self")
+              .card-img
+                img(src=path+"/assets/images/common/news_1.jpg", alt="" title="")
+              .card-content
+                h3.card-title Tư vấn pháp lý - nhượng quyền thương mại
+                p.card-desc Việc ký kết hợp đồng nhượng quyền cần được thực hiện một cách cẩn trọng và chi tiết.
+            - n++
+  section.faq-box(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .container
+      .faq-wrap
+        .heading
+          h2.title.cl-pri
+            span câu hỏi&#160;
+            span.cl-sec thường gặp
+          p.desc.cl-pri Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+        ul.faq
+          li.faq-item
+            details
+              summary
+                span.faq-num 01
+                h3.faq-title Công ty TNHH Luật Minh Tú cung cấp những dịch vụ nào?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 02
+                h3.faq-title Nhượng quyền thương mại là gì?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 03
+                h3.faq-title Nhượng quyền thương mại hoạt động như thế nào?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 04
+                h3.faq-title Phí nhượng quyền bao nhiêu?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 05
+                h3.faq-title Phòng pháp chế doanh nghiệp thuê ngoài là gì?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 06
+                h3.faq-title Hợp đồng có bắt buộc lập thành văn bản không?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 07
+                h3.faq-title Quyền sở hữu trí tuệ bao gồm những quyền nào?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 08
+                h3.faq-title Có phải tất cả quyền sở hữu trí tuệ phải đăng ký để cấp văn bằng bảo hộ không?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+
+  #ex1.modal.modal-custom
+    iframe(width='960' height='500' src='https://www.youtube.com/embed/Un5fY4tHWWw?si=-P4bwq-Z1UVEdj3S&start=5' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')

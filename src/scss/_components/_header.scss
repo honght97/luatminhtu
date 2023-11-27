@@ -4,7 +4,7 @@
   width: 100%;
   @include transition;
   background-color: #fff;
-  padding: 5rem 0;
+  padding: 2rem 0;
   border-bottom: 0.1rem solid transparent;
   &.is-fixed {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
@@ -19,7 +19,6 @@
     padding: 2rem 0;
   }
   @include max(991.98px) {
-    padding: 2rem 0;
     height: 9rem;
   }
 }
