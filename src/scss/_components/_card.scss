@@ -1,6 +1,8 @@
 .card {
   @include transition;
   transform: translateY(0);
+  display: flex;
+  flex-direction: column;
   @include min(992px) {
     &:hover {
       transform: translateY(0.5rem);
@@ -27,6 +29,7 @@
   background-color: $color-pri;
   padding: 1rem 2.2rem 2.2rem;
   @include transition;
+  flex: 1;
 }
 .card-title {
   color: $color-text;
