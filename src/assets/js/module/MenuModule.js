@@ -25,4 +25,12 @@ export default function MenuModule() {
       $("body").css("overflow", "unset");
     }
   });
+  if (width < 992) {
+    $(".js-sub .submenu").hide();
+    $(".js-sub").click((e) => {
+      let current = $(e.currentTarget);
+      current.toggleClass("is-active");
+      current.find(".submenu").slideToggle();
+    });
+  }
 }
