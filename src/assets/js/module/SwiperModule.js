@@ -12,11 +12,11 @@ export default function SwiperModule() {
       delay: 3000,
     },
     breakpoints: {
-      576: {
+      640: {
         slidesPerView: 2,
         spaceBetween: 20,
       },
-      768: {
+      900: {
         slidesPerView: 3,
         spaceBetween: 15,
       },
@@ -74,11 +74,11 @@ export default function SwiperModule() {
       delay: 3000,
     },
     breakpoints: {
-      576: {
+      640: {
         slidesPerView: 2,
         spaceBetween: 20,
       },
-      768: {
+      900: {
         slidesPerView: 3,
         spaceBetween: 15,
       },

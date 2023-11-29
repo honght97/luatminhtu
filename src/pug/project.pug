@@ -1,0 +1,310 @@
+extends _layout/default
+
+block vars
+  -title        = 'Project'
+  -description  = ''
+  -keywords     = ''
+  -og_title     = ''
+  -url          = ''
+  -pageID       = 'project'
+  -path         = '.'
+
+block scripts
+
+block container
+  section.banner.banner-proj
+    .banner-img
+      img(src=path+"/assets/images/project/banner.jpg", alt="" title="")
+  section.proj-intro(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .container
+      .proj-intro-wrap
+        h2.title.cl-sec.t-center Nhượng quyền thương hiệu là gì?
+        p.desc.t-center Nhượng quyền thương mại là hình thức kinh doanh được thai nghén từ thế kỷ thứ 18 tại Châu Âu, tuy nhiên cái nôi của nhượng quyền phải kể đến Hoa Kỳ với sự khởi phát từ thương hiệu máy may Stinger trong những năm 50 của thế kỷ 19. Cho đến nay, nhượng quyền thương mại vẫn được xem là cách thức phát triển kinh doanh nhanh chóng, giúp mở rộng mô hình, phát triển thương hiệu. Việt Nam là một trong 3 quốc gia Đông Nam Á có thị trường nhượng quyền thương mại sôi động, chỉ sau Phillipines và Indonesia. Nhượng quyền thương mại là việc một bên (gọi là Bên nhượng quyền) cho phép bên khác (gọi là Bên nhận quyền) được phép sử dụng thương hiệu, bí quyết kinh doanh, xây dựng cửa hàng/ mô hình nhượng quyền nhằm mục đích sinh lợi trong một thời hạn nhất định.
+        .proj-intro-list
+          .proj-intro-item
+            .card
+              .card-img
+                img(src=path+"/assets/images/project/intro.jpg", alt="" title="")
+                a.card-media(href='#ex1' rel='modal:open')
+                  img(src=path+"/assets/images/common/ico_play.svg", alt="" title="")
+          .proj-intro-item.bg-pri
+            ol.intro
+              li.intro-item
+                a(href="#" title='' target="_self") Nhượng quyền thương hiệu là gì
+              li.intro-item
+                a(href="#" title='' target="_self") Nhượng quyền thương hiệu là gì
+              li.intro-item
+                a(href="#" title='' target="_self") Nhượng quyền thương hiệu là gì
+              li.intro-item
+                a(href="#" title='' target="_self") Nhượng quyền thương hiệu là gì
+              li.intro-item
+                a(href="#" title='' target="_self") Nhượng quyền thương hiệu là gì
+              li.intro-item
+                a(href="#" title='' target="_self") Nhượng quyền thương hiệu là gì
+  section.proj-area(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .bg-sec
+      .heading
+        h2.title.cl-white.t-center Nhiều chủ doanh nghiệp không nghĩ rằng mô hình của họ có thể nhượng quyền được đến khi một ai nói cho họ
+    .container
+      .proj-area-list
+        .proj-area-item
+          .trust-img
+            img(src=path+"/assets/images/project/project_1.svg", alt="" title="")
+          p.desc.cl-pri.t-center Nhượng quyền quán cafe, trà sữa
+        .proj-area-item
+          .trust-img
+            img(src=path+"/assets/images/project/project_2.svg", alt="" title="")
+          p.desc.cl-pri.t-center Nhượng quyền nhà hàng lẩu
+        .proj-area-item
+          .trust-img
+            img(src=path+"/assets/images/project/project_3.svg", alt="" title="")
+          p.desc.cl-pri.t-center Nhượng quyền kinh doanh bán lẻ
+        .proj-area-item
+          .trust-img
+            img(src=path+"/assets/images/project/project_4.svg", alt="" title="")
+          p.desc.cl-pri.t-center Nhượng quyền giáo dục
+        .proj-area-item
+          .trust-img
+            img(src=path+"/assets/images/project/project_5.svg", alt="" title="")
+          p.desc.cl-pri.t-center Nhượng quyền chuỗi Spa
+        .proj-area-item
+          .trust-img
+            img(src=path+"/assets/images/project/project_6.svg", alt="" title="")
+          p.desc.cl-pri.t-center Nhượng quyền hệ thống gaming
+        .proj-area-item
+          .trust-img
+            img(src=path+"/assets/images/project/project_7.svg", alt="" title="")
+          p.desc.cl-pri.t-center Nhượng quyền chuỗi mẹ và bé
+  section.h-feedback.proj-feedback(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .container
+      h2.title.cl-pri.t-center
+        span.cl-sec Chia sẻ từ các khách hàng mà Luật Minh Tú đã tư vấn trong&#160;
+        span mô hình nhượng quyền
+      .feedback
+        .swiper.js-feedback
+          .swiper-wrapper
+            .swiper-slide
+              .card.card-member
+                .card-img
+                  img(src=path+"/assets/images/common/people_1.jpg", alt="" title="")
+                  a.card-media(href='#ex1' rel='modal:open')
+                    img(src=path+"/assets/images/common/ico_play.svg", alt="" title="")
+                .card-content
+                  h3.card-title Nguyễn Lâm Thảo
+                  p.card-info-item Giám đốc
+                  p.card-desc Tôi đã sử dụng dịch vụ của họ để giải quyết một vấn đề pháp lý và tôi rất hài lòng với kết quả. Luật sư của công ty rất chuyên nghiệp và tận tâm, họ giải thích rõ ràng
+            .swiper-slide
+              .card.card-member
+                .card-img
+                  img(src=path+"/assets/images/common/people_2.jpg", alt="" title="")
+                  a.card-media(href='#ex1' rel='modal:open')
+                    img(src=path+"/assets/images/common/ico_play.svg", alt="" title="")
+                .card-content
+                  h3.card-title Hà Tố Như
+                  p.card-info-item Giám đốc
+                  p.card-desc Tôi đã sử dụng dịch vụ của họ để giải quyết một vấn đề pháp lý và tôi rất hài lòng với kết quả. Luật sư của công ty rất chuyên nghiệp và tận tâm, họ giải thích rõ ràng
+            .swiper-slide
+              .card.card-member
+                .card-img
+                  img(src=path+"/assets/images/common/people_3.jpg", alt="" title="")
+                  a.card-media(href='#ex1' rel='modal:open')
+                    img(src=path+"/assets/images/common/ico_play.svg", alt="" title="")
+                .card-content
+                  h3.card-title Lâm Văn Hùng
+                  p.card-info-item Giám đốc
+                  p.card-desc Tôi đã sử dụng dịch vụ của họ để giải quyết một vấn đề pháp lý và tôi rất hài lòng với kết quả. Luật sư của công ty rất chuyên nghiệp và tận tâm, họ giải thích rõ ràng
+            .swiper-slide
+              .card.card-member
+                .card-img
+                  img(src=path+"/assets/images/common/people_4.jpg", alt="" title="")
+                  a.card-media(href='#ex1' rel='modal:open')
+                    img(src=path+"/assets/images/common/ico_play.svg", alt="" title="")
+                .card-content
+                  h3.card-title Nguyễn Khoa Đăng
+                  p.card-info-item Giám đốc
+                  p.card-desc Tôi đã sử dụng dịch vụ của họ để giải quyết một vấn đề pháp lý và tôi rất hài lòng với kết quả. Luật sư của công ty rất chuyên nghiệp và tận tâm, họ giải thích rõ ràng
+          .swiper-pagination.feedback-pag
+  section.proj-module(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .container
+      h2.title.cl-sec.t-center 4 Mô hình nhượng quyền phổ biến
+      .proj-module-list
+        .proj-module-item
+          .proj-module-heading.cl-txt
+            span 1
+            h3.proj-module-title Nhượng quyền mô hình kinh doanh toàn diện (Full business format franchise)
+          p.desc.cl-white Bên nhượng quyền chuyển nhượng đầu đủ hệ thống (chiến lược, quy trình vận hàng, chính sách quản lý, hỗ trợ tiếp thị, quảng cáo…); bí quyết công nghệ sản xuất/kinh doanh; hệ thống thương hiệu, sản phẩm/dịch vụ.
+        .proj-module-item
+          .proj-module-heading.cl-txt
+            span 2
+            h3.proj-module-title Nhượng quyền mô hình kinh doanh không toàn diện (non-business format franchise)
+          p.desc.cl-white Bên nhượng quyền nhượng một phần sản phẩm, hình thức kinh doanh đến đối tác nhận quyền
+        .proj-module-item
+          .proj-module-heading.cl-txt
+            span 3
+            h3.proj-module-title Nhượng quyền có tham gia quản lý (management franchise)
+          p.desc.cl-white Bên cạnh chuyển nhượng quyền sử dụng thương hiệu và mô hình/công thức kinh doanh, bên nhượng quyền hỗ trợ cung cấp người quản lý và điều hành.
+        .proj-module-item
+          .proj-module-heading.cl-txt
+            span 4
+            h3.proj-module-title Nhượng quyền có tham gia đầu tư vốn (equity franchise)
+          p.desc.cl-white Bên nhượng quyền tham gia đầu tư vốn với tỷ lệ nhỏ và có thể tham gia vào hội đồng quản trị công ty của đối tác nhận quyền.
+  section.proj-risk(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .proj-risk-item.bg-sec
+      h3.proj-risk-title Những vấn đề, rủi ro thường gặp phải khi kinh doanh nhượng quyền
+      ol
+        li Rủi ro về thương hiệu, bí mật kinh doanh
+        li Rủi ro về tài chính (khoản tiền đầu tư lớn để xây dựng và quản trị hệ thống)
+        li Rủi ro về quản trị, vận hành (không thể kiểm soát hệ thống một cách tuyệt đối đối với hoạt động của bên nhận quyền
+        li Rủi ro về pháp lý (chưa hiểu rõ pháp lý sản phẩm, thương hiệu, hợp đồng dẫn đến mâu thuẫn, khiếu nại, khởi kiện).
+        li Rủi ro về cạnh tranh trong chính hệ thống nhượng quyền (giữa bên nhượng quyền với bên nhận quyền và giữa cả các bên nhận quyền với nhau).
+    .proj-risk-item.bg-pri
+      h3.proj-risk-title Giải pháp mà Luật Minh Tú đưa ra để giải quyết
+      ol
+        li Đăng ký và được cấp văn bằng bảo hộ các quyền sở hữu trí tuệ liên quan đến quyền thương mại để thực hiện nhượng quyền dưới các hình thức như nhãn hiệu, kiểu dáng công nghiệp, bí mật kinh doanh…
+        li Thiết lập quy trình, hệ thống bảo mật, các quy định bảo mật thông tin đối với đội ngũ nhân sự và đối tác nhận nhượng quyền
+        li Xây dựng kế hoạch tài chính chi tiết và thực hiện quản lý tài chính.
+        li Xây dựng quy trình vận hành, hỗ trợ và giám sát chặt chẽ
+        li Đàm phán, thỏa thuận và xây dựng bộ hợp đồng nhượng quyền chuẩn pháp lý (điều khoản hạn chế cạnh tranh, phương thức xử lý vi phạm, giải quyết tranh chấp,..)
+        li Tìm hiểu kỹ về đối tác để tránh tình trạng lợi dụng, thâm nhập vào hệ thống nhượng quyền để nhằm mục đích không thiện chí, không trung thực.
+  section.proj-sup(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .container
+      h2.title.cl-sec.t-center Luật Minh Tú hỗ trợ bạn
+      .proj-sup-wrap
+        ul.proj-sup-list
+          li Đăng ký bảo hộ nhãn hiệu, kiểu dáng công nghiệp;
+          li Tư vấn và triển khai hệ thống pháp lý nhượng quyền: lựa chọn mô hình nhượng quyền; đóng gói hệ thống pháp lý nhượng quyền: các giấy phép con, các hợp đồng nhượng quyền, hợp đồng cung cấp nguyên vật liệu, Hợp đồng vận hành, Hợp đồng Marketing hệ thống, Hợp đồng đào tạo nhân sự, Bộ quy tắc ứng xử trong hệ thống nhượng quyền… và các văn bản pháp lý khác theo yêu cầu của Bên Nhượng quyền hoặc Bên Nhận quyền;
+        ul.proj-sup-list
+          li Đại diện đàm phán ký kết, sửa đổi, chấm dứt hợp đồng nhượng quyền;
+          li Đăng ký nhượng quyền thương mại tại cơ quan nhà nước có thẩm quyền;
+          li Đại diện thực hiện thủ tục xin các loại giấy phép và các dịch vụ liên quan;
+          li Hỗ trợ pháp lý Bên nhận quyền, Bên nhượng quyền trong quá trình thực hiện hợp đồng nhượng quyền;
+          li Tư vấn, đại diện đàm phán, thương lượng để giải quyết tranh chấp hợp đồng nhượng quyền.
+  section.proj-bg(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .proj-img
+      img(src=path+"/assets/images/project/bg.jpg", alt="" title="")
+  section.h-form.proj-form(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .form-wrap.bg-sec
+      .container
+          h2.title.cl-white Để nhận được thông tin hữu ích bạn hãy để lại thông tin bên dưới để được tư vấn 1:1 cùng chuyên gia
+      .form-inner
+        .form-box
+          form.form(action="")
+            .form-group
+              label(for="name") Họ và tên
+              input#name(type="text")
+            .form-group
+              label(for="phone") Số điện thoại
+              input#phone(type="text")
+            .form-group
+              label(for="mess") Nội dung
+              textarea#mess(name="", cols="30", rows="10")
+            .btn-wrap
+                button.btn.btn-border(type="submit") Gửi
+          .card.form-media
+            .card-img
+              img(src=path+"/assets/images/common/form.jpg", alt="" title="")
+              a.card-media(href='#ex1' rel='modal:open')
+                img(src=path+"/assets/images/common/ico_play.svg", alt="" title="")
+  section.h-customer(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .container
+      h2.title.cl-sec.t-center KHÁCH HÀNG CỦA CHÚNG TÔI
+      .cusomter
+        .swiper.js-customer
+          .swiper-wrapper
+            .swiper-slide
+              img(src=path+"/assets/images/common/customer_1.png", alt="" title="")
+            .swiper-slide
+              img(src=path+"/assets/images/common/customer_2.png", alt="" title="")
+            .swiper-slide
+              img(src=path+"/assets/images/common/customer_3.png", alt="" title="")
+            .swiper-slide
+              img(src=path+"/assets/images/common/customer_4.png", alt="" title="")
+            .swiper-slide
+              img(src=path+"/assets/images/common/customer_5.png", alt="" title="")
+            .swiper-slide
+              img(src=path+"/assets/images/common/customer_6.png", alt="" title="")
+          .swiper-pagination.customer-pag
+  section.faq-box(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
+    .container
+      .faq-wrap
+        .heading
+          h2.title.cl-pri
+            span câu hỏi&#160;
+            span.cl-sec thường gặp
+          p.desc.cl-pri Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+        ul.faq
+          li.faq-item
+            details
+              summary
+                span.faq-num 01
+                h3.faq-title Công ty TNHH Luật Minh Tú cung cấp những dịch vụ nào?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 02
+                h3.faq-title Nhượng quyền thương mại là gì?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 03
+                h3.faq-title Nhượng quyền thương mại hoạt động như thế nào?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 04
+                h3.faq-title Phí nhượng quyền bao nhiêu?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 05
+                h3.faq-title Phòng pháp chế doanh nghiệp thuê ngoài là gì?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 06
+                h3.faq-title Hợp đồng có bắt buộc lập thành văn bản không?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 07
+                h3.faq-title Quyền sở hữu trí tuệ bao gồm những quyền nào?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+          li.faq-item
+            details
+              summary
+                span.faq-num 08
+                h3.faq-title Có phải tất cả quyền sở hữu trí tuệ phải đăng ký để cấp văn bằng bảo hộ không?
+                span.faq-icon
+                  img(src=path+"/assets/images/common/ico_plus.svg", alt="" title="")
+                  img(src=path+"/assets/images/common/ico_minus.svg", alt="" title="")
+              p.desc.cl-white Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi! Một số vướng mắt phổ biến được liệt kê và trả lời tại đâu, nếu câu hỏi của bạn không được đề cập, hãy liên hệ với chúng tôi!
+
+  #ex1.modal.modal-custom
+    iframe(width='960' height='500' src='https://www.youtube.com/embed/Un5fY4tHWWw?si=-P4bwq-Z1UVEdj3S&start=5' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')

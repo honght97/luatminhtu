@@ -4,7 +4,7 @@
   width: 100%;
   @include transition;
   background-color: #fff;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   border-bottom: 0.1rem solid transparent;
   &.is-fixed {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
@@ -16,10 +16,15 @@
     border-color: $color-pri;
   }
   @include max(1440px) {
-    padding: 2rem 0;
+    // padding: 2rem 0;
   }
   @include max(991.98px) {
-    height: 9rem;
+    height: 5rem;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
 .header {
@@ -28,10 +33,15 @@
   align-items: center;
 }
 .header-logo {
-  @include max(991.98px) {
+  height: 5rem;
+  img {
     height: 5rem;
+    width: auto;
+  }
+  @include max(991.98px) {
+    height: 4rem;
     img {
-      height: 5rem;
+      height: 4rem;
       width: auto;
     }
   }
@@ -140,10 +150,10 @@
   }
   @include max(991.98px) {
     position: fixed;
-    top: 9rem;
+    top: 5rem;
     width: 100%;
     right: (-100%);
-    height: calc(100% - 9rem);
+    height: calc(100% - 5rem);
     flex-direction: column;
     justify-content: flex-start;
     background: #fff;
