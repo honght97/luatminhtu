@@ -63,6 +63,7 @@
   }
   @include max(991.98px) {
     flex-direction: column;
+    align-items: center;
     width: 100%;
     gap: 3rem;
   }
@@ -134,7 +135,7 @@
     .card-info {
       li {
         img {
-          display: none;
+          // display: none;
         }
       }
     }
