@@ -1,4 +1,13 @@
 export default function SwiperModule() {
+  var banner = new Swiper(".js-banner", {
+    pagination: {
+      el: ".banner-pag",
+    },
+    speed: 800,
+    autoplay: {
+      delay: 3000,
+    },
+  });
   const member = new Swiper(".js-member", {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -25,7 +34,7 @@ export default function SwiperModule() {
         slidesPerView: 4,
       },
       1700: {
-        spaceBetween: 90,
+        spaceBetween: 32,
         slidesPerView: 4,
       },
     },
@@ -56,7 +65,7 @@ export default function SwiperModule() {
         slidesPerView: 6,
       },
       1700: {
-        spaceBetween: 80,
+        spaceBetween: 32,
         slidesPerView: 6,
       },
     },
@@ -87,7 +96,7 @@ export default function SwiperModule() {
         slidesPerView: 4,
       },
       1700: {
-        spaceBetween: 90,
+        spaceBetween: 32,
         slidesPerView: 4,
         autoplay: false,
         pagination: false,
@@ -120,7 +129,7 @@ export default function SwiperModule() {
         slidesPerView: 4,
       },
       1700: {
-        spaceBetween: 85,
+        spaceBetween: 32,
         slidesPerView: 4,
       },
     },

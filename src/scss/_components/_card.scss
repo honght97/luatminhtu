@@ -31,12 +31,12 @@
 }
 .card-title {
   color: $color-text;
-  @include fz-30;
+  @include fz-26;
   line-height: 3.5rem;
 }
 .card-desc {
   color: #fff;
-  @include fz-20;
+  @include fz-18;
   margin-top: 1rem;
 }
 .card-member {

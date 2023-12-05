@@ -52,7 +52,8 @@
   }
 }
 .wrap {
-  width: calc(19 / 20 * 100%);
+  width: 100%;
+  margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
@@ -67,11 +68,10 @@
   }
 }
 .heading {
-  width: calc(4 / 19 * 100%);
+  flex: 1;
   .title {
     display: flex;
     flex-direction: column;
-    max-width: 29.5rem;
   }
   @include max(991.98px) {
     width: 100%;
@@ -79,6 +79,11 @@
       flex-direction: row;
       flex-wrap: wrap;
       max-width: unset;
+    }
+  }
+  @include max(575.98px) {
+    .title {
+      justify-content: center;
     }
   }
 }
@@ -178,7 +183,7 @@
 .h-trust {
   padding: 5.5rem 0;
   .title {
-    @include fz-48;
+    @include fz-34;
   }
 }
 .trust {
@@ -314,6 +319,7 @@
   @include flex;
   .heading {
     width: calc(5 / 20 * 100%);
+    flex: unset;
     .desc {
       max-width: 26.1rem;
       margin-top: 5.3rem;
@@ -400,7 +406,7 @@
   text-transform: uppercase;
 }
 .faq-title {
-  @include fz-34;
+  @include fz-30;
   color: $color-text;
   flex: 1;
   @include max(767.98px) {

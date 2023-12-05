@@ -1,8 +1,11 @@
 .title {
-  @include fz-60;
+  @include fz-34;
   font-weight: 700;
   text-transform: uppercase;
+  @include max(575.98px) {
+    text-align: center;
+  }
 }
 .desc {
-  @include fz-24;
+  @include fz-20;
 }

@@ -16,13 +16,23 @@
   }
   .title {
     max-width: 125.9rem;
-    @include fz-48;
+    @include fz-34;
     text-transform: capitalize;
   }
-
+  @include max(1440px) {
+    .title {
+      max-width: 87.9rem;
+    }
+    &::before {
+      @include box(30.6rem);
+    }
+  }
   @include max(1200px) {
     .title {
       font-size: 3.5rem;
+    }
+    &::before {
+      @include box(11.6rem, 30.6rem);
     }
   }
   @include max(991.98px) {
@@ -52,7 +62,7 @@
 }
 .form-box {
   @include flex;
-  max-width: 175rem;
+  max-width: 161rem;
   padding-left: 1.5rem;
   margin-left: auto;
   @include max(1750px) {
@@ -98,7 +108,7 @@
   font-family: var(--font-pri);
   color: $color-pri;
   label {
-    @include fz-34;
+    @include fz-26;
     color: inherit;
     font-family: inherit;
     line-height: 4rem;
@@ -132,9 +142,20 @@
 .form {
   .btn {
     width: 19.2rem;
+    margin-right: 0;
+    background-color: transparent;
+    border: 0.1rem solid $color-pri;
+    color: $color-pri;
+    border-radius: 10rem;
+    &:hover {
+      background-color: $color-second;
+    }
   }
   .btn-wrap {
     @include flex-center;
     justify-content: flex-end;
+    .wpcf7-spinner {
+      display: none;
+    }
   }
 }

@@ -13,8 +13,15 @@ block scripts
 
 block container
   section.banner
-    .banner-img
-      img(src=path+"/assets/images/home/banner.jpg", alt="" title="")
+    .swiper.js-banner
+      .swiper-wrapper
+        .swiper-slide
+          .banner-img
+            img(src=path+"/assets/images/home/banner.jpg", alt="" title="")
+        .swiper-slide
+          .banner-img
+            img(src=path+"/assets/images/home/banner.jpg", alt="" title="")
+    .swiper-pagination.banner-pag
   section.h-intro(data-aos='fade-up' data-aos-anchor-placement='top-bottom')
     .container
       .h-intro-wrap
@@ -31,8 +38,9 @@ block container
       .wrap
         .heading
           h2.title.cl-pri
-            span DỊCH VỤ CHUYÊN BIỆT TẠI&#160;
-            span.cl-sec LUẬT MINH TÚ
+            span DỊCH VỤ&#160;
+            span CHUYÊN BIỆT&#160;
+            span.cl-sec TẠI LUẬT MINH TÚ
         .card-list
           a.card(href="#" title='' target="_self")
               .card-img
@@ -110,7 +118,7 @@ block container
                 ul.card-info
                   li.card-info-item
                     img(src=path+"/assets/images/home/ico_user.svg", alt="" title="")
-                    span Vị trí: Chuyên viên giải quyết tranh chấp
+                    span Chuyên viên giải quyết tranh chấp
                   li.card-info-item
                     img(src=path+"/assets/images/home/ico_mail.svg", alt="" title="")
                     span duyenle@luatminhtu.vn
@@ -123,7 +131,7 @@ block container
                 ul.card-info
                   li.card-info-item
                     img(src=path+"/assets/images/home/ico_user.svg", alt="" title="")
-                    span Vị trí: Chuyên viên pháp lý
+                    span Chuyên viên pháp lý
                   li.card-info-item
                     img(src=path+"/assets/images/home/ico_mail.svg", alt="" title="")
                     span thuyhang@luatminhtu.com
