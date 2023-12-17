@@ -64,8 +64,13 @@
   &:not(:last-child) {
     margin-bottom: 1rem;
   }
+  a {
+    &:hover {
+      color: #fff;
+    }
+  }
   &:hover {
-    color: $color-text;
+    // color: $color-text;
   }
 }
 .proj-area {

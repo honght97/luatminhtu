@@ -42,7 +42,7 @@ export default function SwiperModule() {
   const customer = new Swiper(".js-customer", {
     slidesPerView: 2,
     spaceBetween: 10,
-    loop: true,
+    // loop: true,
     pagination: {
       el: ".customer-pag",
       clickable: true,
