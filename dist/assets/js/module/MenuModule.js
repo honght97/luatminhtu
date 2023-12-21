@@ -33,4 +33,11 @@ export default function MenuModule() {
       current.find(".submenu").slideToggle();
     });
   }
+
+  // modal menu
+
+  $(".js-media").click(function () {
+    let src = $(this).data("src");
+    $(".js-video").find("iframe").attr("src", src);
+  });
 }
